@@ -15,6 +15,11 @@ We use programmable wallet API to create a dev-controlled programmable wallet to
 Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the user use their *USDC on Georli* to buy *$BST and AVAX* on Fuji testnet.
 
 * Create a new dev controlled programmable wallet and attach it to current login user
+  * [Frontend code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue)
+  * Frontend make request to api server which call the code in [backend api code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts)
+  * The backend code check if current login user already have the programmable wallet created first: [code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts#L17-L40)
+    * If already created, just return to frondend
+    * If not, call the func [createCircleWalletRequest](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts#L43C22-L60) in [circle-sdk script](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/circle-sdk.ts)
 * While the user try to post a new Tweet with *Random Lottery* attached
   * it requires the user to fund enough $BST and also enough AVAX gas token in the programmable wallet
   * user can fund with their *USDC on Goerli* into *Fuji chain* via the CCTP tech
