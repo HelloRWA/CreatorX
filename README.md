@@ -40,6 +40,8 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the u
   * [Programmable wallet we create(link to snowtrace)](https://testnet.snowtrace.io/address/0xe3a4ee3674b7952d5f4457a94d3a3ab163e7679f)
 * [Relative Source code about CCTP](./cctp)
 * [Pitch Deck for RWA-Wallet.com](https://pitch.com/public/724fc677-e462-4ddc-bbb1-bb389d8ed886)
+* [RWAProtocol contract address deploy on Fuji 0x1cb4b8060d15Afcc531Ec2d81f76bD29C586fEF0](https://testnet.snowtrace.io/address/0x1cb4b8060d15Afcc531Ec2d81f76bD29C586fEF0)
+* [BSTEntropy contract address deploy on Fuji 0xB9e94A2Cb0Ef78deBc25D76e8f62E1C024c15A17](https://testnet.snowtrace.io/address/0xB9e94A2Cb0Ef78deBc25D76e8f62E1C024c15A17)
 
 ## What's next
 
