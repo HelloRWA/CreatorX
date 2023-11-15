@@ -5,7 +5,7 @@
 We build a blockchain base of X.com, all the new tweets require user to pay gas and ERC20 tokens to post.
 User can log in via an X.com account and our system use the MPC wallet tech to create a new wallet for the user under the hood. So users do not need to import any private key on our platform but still have a wallet to interact with blockchain.
 
-![screenshot-1](./screenshot-1.jpg)
+![product screenshot](./screenshot-1.jpg)
 
 ## What do we do with Programmable Wallet and CCTP?
 
@@ -13,6 +13,9 @@ We use them in our *Random Lottery* module.
 Users can create a new Lottery pool to attach to a new Tweet that other users can pay ERC20 tokens to buy the lottery and then get lucky.
 We use programmable wallet API to create a dev-controlled programmable wallet to work as the vault of the lottery.
 Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the user use their *USDC on Georli* to buy *$BST and AVAX* on Fuji testnet.
+
+![circle integrated screenshot](./screenshot-2.jpg)
+
 
 * Create a new dev controlled programmable wallet and attach it to current login user
   * [Frontend code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue#L27-L34) && [screenshot](./screenshot/programmable-wallet-for-lottery-vault.png)
