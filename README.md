@@ -5,6 +5,8 @@
 We build a blockchain base of X.com, all the new tweet require user to pay gas and ERC20 token to post.
 User can login via X.com account and our system use the MPC wallet tech to create a new wallet for the user under the hood. So user do not need to import any private key on our platform but still have a wallet to interact with blockchain.
 
+![screenshot-1](./screenshot-1.jpg)
+
 ## What we do with Programmable Wallet and CCTP?
 
 We use them in our *Random Lottery* module. 
@@ -23,9 +25,9 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help user 
 
 * [Demo Video](#)
 * [Relative Source code about Programmable Wallet](./programmable-wallet)
-  * [Programmable wallet we create](https://testnet.snowtrace.io/address/0xe3a4ee3674b7952d5f4457a94d3a3ab163e7679f)
+  * [Programmable wallet we create(link to snowtrace)](https://testnet.snowtrace.io/address/0xe3a4ee3674b7952d5f4457a94d3a3ab163e7679f)
 * [Relative Source code about CCTP](./cctp)
-* [Pitch](https://pitch.com/public/724fc677-e462-4ddc-bbb1-bb389d8ed886)
+* [Pitch Deck for RWA-Wallet.com](https://pitch.com/public/724fc677-e462-4ddc-bbb1-bb389d8ed886)
 
 ## What's next
 
