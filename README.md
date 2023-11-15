@@ -16,7 +16,6 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the u
 
 ![circle integrated screenshot](./screenshot-2.jpg)
 
-
 * Create a new dev controlled programmable wallet and attach it to current login user
   * [Frontend code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue#L27-L34) && [screenshot](./screenshot/programmable-wallet-for-lottery-vault.png)
   * Frontend make request to api server which call the code in [backend api code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts)
