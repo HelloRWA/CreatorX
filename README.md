@@ -15,7 +15,7 @@ We use programmable wallet API to create a dev-controlled programmable wallet to
 Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the user use their *USDC on Georli* to buy *$BST and AVAX* on Fuji testnet.
 
 * Create a new dev controlled programmable wallet and attach it to current login user
-  * [Frontend code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue)
+  * [Frontend code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue#L27-L34) && [screenshot](./screenshot/programmable-wallet-for-lottery-vault.png)
   * Frontend make request to api server which call the code in [backend api code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts)
   * The backend code check if current login user already have the programmable wallet created first: [code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/walletSet.get.ts#L17-L40)
     * If already created, just return to frondend
@@ -23,7 +23,12 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the u
 * While the user try to post a new Tweet with *Random Lottery* attached
   * it requires the user to fund enough $BST and also enough AVAX gas token in the programmable wallet
   * user can fund with their *USDC on Goerli* into *Fuji chain* via the CCTP tech
-* We also use the *circle-mint in app-sanbox* that fund our wallet with 2000 USDC on Goerli
+  * [fund-AVAX-via-USD.png](./screenshot/fund-AVAX-via-USD.png)
+  * [fund-ERC20-via-USDC.png](./screenshot/fund-ERC20-via-USDC.png)
+  * [Frontend code which request user's metamask wallet to fund with USDC on Goerli](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue#L75-L161)
+  * Backend code that delevery the $BST or AVAX gas token to the Programmable Wallet Vault
+    * We use the *depositForBurnWithCaller* feature [code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/programmable-wallet/wallet.vue#L98), so we need our server side to call the *USDCMessageTransmitter.receiveMessage* method [code](https://github.com/HelloRWA/circle-programmable-wallets-cctp/blob/main/cctp/receive.post.ts#L27-L36)
+* We also manual use the *circle-mint in app-sanbox* that fund our wallet with 2000 USDC on Goerli
   * Which we will integrate the feature into our product that provide user to pay via credit card to buy USDC.
 
 ## Links
