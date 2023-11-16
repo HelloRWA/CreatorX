@@ -1,4 +1,4 @@
-# circle-programmable-wallets-cctp
+# CreatorX
 
 ## What it does
 
