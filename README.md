@@ -35,7 +35,7 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the u
 
 ## Links
 
-* [Demo Video](#)
+* [Demo Video](https://youtu.be/XfFiRW33q-8)
 * [Relative Source code about Programmable Wallet](./programmable-wallet)
   * [Programmable wallet we create(link to snowtrace)](https://testnet.snowtrace.io/address/0xe3a4ee3674b7952d5f4457a94d3a3ab163e7679f)
 * [Relative Source code about CCTP](./cctp)
