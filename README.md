@@ -7,6 +7,23 @@ User can log in via an X.com account and our system use the MPC wallet tech to c
 
 ![product screenshot](./screenshot-1.jpg)
 
+## What do we do with the CCIP and VRF from ChainLink?
+
+We build a `BST Bridge` via the CCIP that help our user to spend USDC from Sepolia and get `$BSTSwap` on Fuji.
+And user can use the `$BSTSwap` token to playaround our social application on Fuji.
+
+* [`BSTBridge.sol`](./ccip/BSTBridge.sol) which we deploy on Sepolia as sender and Fuji as receiver
+  * A demo CCIP call <https://ccip.chain.link/msg/0x43323c1905629337486f8e6de9774a1444e9167075b57ca783a972ba2923f91c>
+  * The Sender on Sepolia we deploy: <https://sepolia.etherscan.io/address/0x54c17ec7226c9b51ff15c96b4662d668505555f9>
+  * The Receiver on Fuji we deploy: <https://testnet.snowtrace.io/address/0x7a0d634ab5c038e7b038d1452c4a122ed498dae2>
+* [`BST Bridge UI - Send Token`](./ccip/CCIP.vue)
+* [`BST Bridge UI - Claim Token`](./ccip/Claim.vue)
+* [`RandomLottery.sol`](./vrf/RandomLottery.sol)
+
+## What do we do with the Fuji Chain?
+
+We deploy our social contract on the Fuji Chain: <https://testnet.snowtrace.io/address/0x1cb4b8060d15Afcc531Ec2d81f76bD29C586fEF0>
+
 ## What do we do with Programmable Wallet and CCTP?
 
 We use them in our *Random Lottery* module.
@@ -45,5 +62,6 @@ Also while the user lake of $BST and AVAX token, we use the *CCTP* to help the u
 
 ## What's next
 
-* We still heavy build our product of RWA-Wallet.com, plan to launch it before 2023/12/01
-* We also plan to use the [*Circle Mint*](https://www.circle.com/en/circle-mint) feature that we can provide our user to pay via their credit card which we need some time to setup a company in HongKong
+* We still heavy build our product of RWA-Wallet.com, plan to launch it before 2024
+* Deploy on mainnet of ETH
+* Deploy on AVAX chain
